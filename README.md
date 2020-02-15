@@ -16,6 +16,7 @@ The map itself
 
 Second layer:
 Markers
+
 A red marker which shows your position (or position which you specified).
 Ten or fewer blue markers which show 10 or less nearest places where films were filmed.
 If you point your mouse on a blue marker, you will see 'Click me!' message.
@@ -24,6 +25,7 @@ The red marker also shows an accurate address of your position.
 
 Third layer:
 Distance
+
 The red marker is connected with every blue marker with purple lines.
 On every purple line, there is a text where the distance between the red and blue marker is specified.
 If you point your mouse on any line, you will also see a message about distance.
