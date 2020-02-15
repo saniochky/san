@@ -32,17 +32,17 @@ If you point your mouse on any line, you will also see a message about distance.
 
 ## Errors
 If your location is written in the wrong format, you will this message:
-```python
-'Invalid value. Please write coordinates in format: lat, long.'
-```
+
+```Invalid value. Please write coordinates in format: lat, long.```
+
 If there is not any information about a specified year in the list, you will see this message
-```python
-'This year is not in the list'
-```
-If there is not any places where films were filmed, you will see this message: 
-```python
-'There is not any place where films, were created in this region this year.'
-```
+
+```This year is not in the list```
+
+If there is not any places where films were filmed, you will see this message:
+
+```There is not any place where films, were created in this region this year.```
+
 If any other problems occur, please inform the developer, and he will try to fix them.
 
 ## Example
@@ -55,14 +55,14 @@ Please wait...
 Map is generating...
 Finished. Please have a look at the map 1913_movies_map.html
 ```
-1913_movies_map.html
+`1913_movies_map.html`
 ![Screenshot of map](https://raw.githubusercontent.com/saniochky/san/master/1913_movies_map.png)
 
-Red marker
+`Red marker`
 ![Red marker](https://raw.githubusercontent.com/saniochky/san/master/1913_red_popup.png)
 
-Blue markers
+`Blue markers`
 ![Blue markers](https://raw.githubusercontent.com/saniochky/san/master/1913_blue_popup.png)
 
-Distance
+`Distance`
 ![Dstance lines](https://raw.githubusercontent.com/saniochky/san/master/1913_line_popup.png)
