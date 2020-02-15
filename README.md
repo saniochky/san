@@ -54,4 +54,4 @@ Map is generating...
 Finished. Please have a look at the map 1913_movies_map.html
 ```
 1913_movies_map.html
-![Screenshot of map](https://1drv.ms/u/s!AoUAS1XAhyZZjGwfG9YPg09stOZT)
+![Screenshot of map](https://raw.githubusercontent.com/saniochky/san/master/1913_movies_map.png)
