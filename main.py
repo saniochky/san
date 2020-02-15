@@ -53,7 +53,7 @@ def coordinates(lst):
     {(51.5073509, -0.1277583), (25.7616798, -80.1917902)}
     '''
     coo_lst = set([])
-    gmaps = googlemaps.Client(key='AIzaSyAbj08RLqlA6urGvGaFFB84DdDcPa1a5c4')
+    gmaps = googlemaps.Client(key='AIzaSyALtNqb4VsrQbkkA9HqBvJ3r7NWAEYtXgM')
     for el in lst:
         error = 0
         try:
@@ -194,7 +194,7 @@ def main():
             if not dst:
                 print(
                     'There is not any place where films',
-                    'were created in this region this year.'
+                    'were filmed in this region this year.'
                     )
             else:
                 print(
