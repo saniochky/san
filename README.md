@@ -55,9 +55,12 @@ Finished. Please have a look at the map 1913_movies_map.html
 ```
 1913_movies_map.html
 ![Screenshot of map](https://raw.githubusercontent.com/saniochky/san/master/1913_movies_map.png)
+
 Red marker
 ![Red marker](https://raw.githubusercontent.com/saniochky/san/master/1913_red_popup.png)
+
 Blue markers
 ![Blue markers](https://raw.githubusercontent.com/saniochky/san/master/1913_blue_popup.png)
+
 Distance
 ![Dstance lines](https://raw.githubusercontent.com/saniochky/san/master/1913_line_popup.png)
