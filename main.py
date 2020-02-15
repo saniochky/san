@@ -11,7 +11,7 @@ def read(name, year):
     :param name: str
     :param year: int
     :return: set
-    >>> read('C:/Users/Олександр/PycharmProjects/untitled1/Нова папка/locations.list' ,1888)
+    >>> read('locations.list' ,1888)
     {'England, UK', 'Hannover, Lower Saxony, Germany',
     'West Yorkshire, England, UK',
     'Leeds, West Yorkshire, England, UK',
@@ -183,7 +183,7 @@ def main():
         lat, lng = float(
             location.split(', ')[0]), float(location.split(', ')[1])
         print('Starting...')
-        loc_list = read('C:/Users/Олександр/PycharmProjects/untitled1/Нова папка/locations.list', year)
+        loc_list = read('locations.list', year)
         if loc_list:
             print('Please wait...')
             loc_list = coordinates(loc_list)
