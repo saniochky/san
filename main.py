@@ -76,7 +76,7 @@ def address(lat, lng):
     :return: str
     >>> address(40.714224, -73.961452)
     '279 Bedford Ave, Brooklyn, NY 11211, USA'
-    >>> address(49.8176362,24.0230669)
+    >>> address(49.8176362, 24.0230669)
     "Kozelnytska St, 4, L'viv, L'vivs'ka oblast, Ukraine, 79000"
     '''
     gmaps = googlemaps.Client(key='AIzaSyALtNqb4VsrQbkkA9HqBvJ3r7NWAEYtXgM')
