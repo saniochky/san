@@ -5,8 +5,7 @@ Filming map is a Python module that allows demonstrating nearest places where fi
 Filming map uses locations.list from imdb.com, folium, and googlemaps libraries.
 It requires location (in format: lat, lng) and year. 
 Than an html map is created.
-It might take quite a bit of time because of an enormous amount of information about films.
-But the most time is wasted when the module takes information from Google maps, and I can not deal with it.
+It might take quite a bit of time because of an enormous amount of information about films. But usually it does not take more than one minute to generate map.
 
 ## Map itself
 The map has three layers
