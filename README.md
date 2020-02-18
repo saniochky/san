@@ -1,5 +1,5 @@
 # Filming map
-Filming map is a Python module that allows demonstrating places where films were filmed.
+Filming map is a Python module that allows demonstrating nearest places where films in specific year were filmed.
 
 ## Detailed information
 Filming map uses locations.list from imdb.com, folium, and googlemaps libraries.
