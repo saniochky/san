@@ -4,12 +4,13 @@ import googlemaps
 from math import sin, cos, sqrt, atan2, radians
 
 
-def read(name, year):
+def read(name, year, country):
     '''
     Reads a list of movies and location where they have been created
     and returns a set of locations.
     :param name: str
     :param year: int
+    :param country: str
     :return: set
     >>> read('locations.list' ,1888)
     {'England, UK', 'Hannover, Lower Saxony, Germany',
@@ -21,23 +22,24 @@ def read(name, year):
     year = '(' + str(year) + ')'
     f = open(name, 'r')
     for line in f.readlines():
-        line = line.strip()
+        line = line.strip().lower()
         line = line.split()
         if year in line:
-            line = ' '.join(line)
-            if '{' in line:
-                line = line[0:line.index('{')] + line[line.index('}')+1:]
-            line = line.split()
-            if '()' in line:
-                line.remove('()')
-            if year in line:
-                line = line[line.index(year)+1:]
+            if country in line:
                 line = ' '.join(line)
-                while '(' in line and ')' in line:
-                    line = line[0:line.index('(')] + line[line.index(')')+1:]
+                if '{' in line:
+                    line = line[0:line.index('{')] + line[line.index('}')+1:]
                 line = line.split()
-                line = ' '.join(line)
-                lst.add(line)
+                if '()' in line:
+                    line.remove('()')
+                if year in line:
+                    line = line[line.index(year)+1:]
+                    line = ' '.join(line)
+                    while '(' in line and ')' in line:
+                        line = line[0:line.index('(')] + line[line.index(')')+1:]
+                    line = line.split()
+                    line = ' '.join(line)
+                    lst.add(line)
     f.close()
     return lst
 
@@ -182,8 +184,13 @@ def main():
     if ', ' in location:
         lat, lng = float(
             location.split(', ')[0]), float(location.split(', ')[1])
+        country = address(lat, lng).split(', ')
+        if not country[-1].isdigit():
+            country = country[-1].lower()
+        else:
+            country = country[-2].lower()
         print('Starting...')
-        loc_list = read('locations.list', year)
+        loc_list = read('locations.list', year, country)
         if loc_list:
             print('Please wait...')
             loc_list = coordinates(loc_list)
@@ -194,7 +201,7 @@ def main():
             if not dst:
                 print(
                     'There is not any place where films',
-                    'were filmed in this region this year.'
+                    'were filmed in this country this year.'
                     )
             else:
                 print(
@@ -202,7 +209,7 @@ def main():
                     str(year) + '_movies_map.html'
                 )
         else:
-            print('This year is not in the list')
+            print('This year is not in the list.')
     else:
         print('Invalid value. Please write coordinates in format: lat, long.')
     return None
