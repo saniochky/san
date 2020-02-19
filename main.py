@@ -7,14 +7,13 @@ from math import sin, cos, sqrt, atan2, radians
 def read(name, year, country):
     '''
     Reads a list of movies and location where they have been created
-    and returns a set of locations.
+    and returns a set of locations in given country in given year.
     :param name: str
     :param year: int
     :param country: str
     :return: set
-    >>> read('locations.list' ,1888)
-    {'England, UK', 'Hannover, Lower Saxony, Germany',
-    'West Yorkshire, England, UK',
+    >>> read('locations.list', 1888, 'UK')
+    {'England, UK', 'West Yorkshire, England, UK',
     'Leeds, West Yorkshire, England, UK',
     'Roundhay, Leeds, West Yorkshire, England, UK', 'UK'}
     '''
