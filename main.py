@@ -60,7 +60,6 @@ def coordinates(lst):
         try:
             location = gmaps.geocode(el)
         except googlemaps.exceptions.HTTPError:
-            pass
             error = 1
         if error == 0:
             if location:
