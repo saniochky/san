@@ -54,7 +54,7 @@ def coordinates(lst):
     {(51.5073509, -0.1277583), (25.7616798, -80.1917902)}
     '''
     coo_lst = set([])
-    gmaps = googlemaps.Client(key='AIzaSyALtNqb4VsrQbkkA9HqBvJ3r7NWAEYtXgM')
+    gmaps = googlemaps.Client(key='AIzaSyAd3skpeldG352OyzjvBwzj_7p0AzUFB-k')
     for el in lst:
         error = 0
         try:
@@ -79,7 +79,7 @@ def address(lat, lng):
     >>> address(49.8176362, 24.0230669)
     "Kozelnytska St, 4, L'viv, L'vivs'ka oblast, Ukraine, 79000"
     '''
-    gmaps = googlemaps.Client(key='AIzaSyALtNqb4VsrQbkkA9HqBvJ3r7NWAEYtXgM')
+    gmaps = googlemaps.Client(key='AIzaSyAd3skpeldG352OyzjvBwzj_7p0AzUFB-k')
     reverse_geocode_result = gmaps.reverse_geocode((lat, lng))
     return reverse_geocode_result[0]['formatted_address']
 
